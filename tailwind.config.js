@@ -1,8 +1,10 @@
-import { defineConfig } from "tailwindcss";
+// tailwind.config.js
 
-export default defineConfig({
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./.storybook/**/*.{js,ts,jsx,tsx}"],
+  darkMode: ["class", '[data-mode="dark"]'],
   theme: {
     extend: {},
   },
-});
+  plugins: [],
+};
