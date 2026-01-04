@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Anek-Latin";
+  src: url("./fonts/AnekLatin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Anek-Latin", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-family: var(--font-family);
+
+  --bg: #1a1a1a;
+
+  --primary: #ffd100;
+  --primary-accent: #352c00;
+  --primary-accent-hover: #5b4b00;
+
+  --secondary: #0a0a0a;
+  --secondary-hover: #252525;
+  --secondary-accent: #9b9b9b;
+
+  --text: #ffffff;
+  --text-secondary: #9b9b9b;
+}
