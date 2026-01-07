@@ -14,16 +14,49 @@
     sans-serif;
   font-family: var(--font-family);
 
-  --bg: #1a1a1a;
+  --bg-dark: oklch(16.842% 0.00002 271.152);
+  --bg: oklch(14.479% 0.00002 271.152);
+  --bg-light: oklch(26.479% 0.00002 271.152);
 
-  --primary: #ffd100;
-  --primary-accent: #352c00;
-  --primary-accent-hover: #5b4b00;
+  --primary: oklch(87.495% 0.17902 92.686);
+  --primary-bg: oklch(29.425% 0.06064 96.986);
+  --primary-bg-light: oklch(41.692% 0.08556 94.911);
 
-  --secondary: #0a0a0a;
-  --secondary-hover: #252525;
-  --secondary-accent: #9b9b9b;
+  --border: oklch(35.289% 0.00004 271.152);
+  --border-light: oklch(68.289% 0.00004 271.152);
 
-  --text: #ffffff;
-  --text-secondary: #9b9b9b;
+  --text: oklch(97.913% 0.00011 271.152);
+  --text-alternate: oklch(68.949% 0.00008 271.152);
+
+  --icon-size: clamp(2rem, 2rem + 1vw, 2.5rem);
+
+  .text-2xl {
+    font-size: clamp(4rem, 4rem + 2vw, 6rem);
+    line-height: clamp(3.75rem, 3.75rem + 2vw, 5.5rem);
+  }
+
+  .text-xl {
+    font-size: clamp(3rem, 3rem + 1.5vw, 4.25rem);
+    line-height: clamp(2.8rem, 2.8rem + 2vw, 4rem);
+  }
+
+  .text-lg {
+    font-size: clamp(2.25rem, 2.25rem + 1.5vw, 3.5rem);
+    line-height: clamp(2.25rem, 2.25rem + 1.5vw, 3.5rem);
+  }
+
+  .text-md {
+    font-size: clamp(2rem, 2rem + 1vw, 2.75rem);
+    line-height: clamp(2rem, 2rem + 1vw, 2.75rem);
+  }
+
+  .text-sm {
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.25rem);
+    line-height: clamp(1.15rem, 1rem + 0.5vw, 1.5rem);
+  }
+
+  .text-xs {
+    font-size: clamp(0.9rem, 0.9rem + 0.25vw, 1.1rem);
+    line-height: clamp(1.1rem, 0.9rem + 0.25vw, 1.2rem);
+  }
 }

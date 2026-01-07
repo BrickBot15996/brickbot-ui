@@ -9,6 +9,11 @@ const meta = {
   component: Button,
   parameters: {
     layout: "centered",
+    backgrounds: {
+      options: {
+        black: { name: "Black", value: "#0f0f0f" },
+      },
+    },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Button>;

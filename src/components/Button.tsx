@@ -17,15 +17,15 @@ export function Button({
 }: ButtonProps) {
   return (
     <div
-      className={`w-auto h-auto rounded-full border-2 border-transparent bg-transparent ${className}`}
+      className={`w-auto h-auto rounded-full border-[0.125rem] border-transparent bg-transparent ${className}`}
       style={{ ...style }}
     >
       <button
         className={
-          `w-auto h-auto rounded-full border-4 border-(--primary) px-[3rem] py-[0.4rem] text-[2rem] font-bold items-center justify-center cursor-pointer select-none ` +
+          `w-auto h-auto rounded-full border-[0.25rem] border-(--primary) px-[3rem] py-[0.4rem] text-[2rem] font-bold items-center justify-center cursor-pointer select-none ` +
           (type == "primary"
-            ? "bg-(--primary) text-(--secondary)"
-            : "bg-(--secondary) text-(--primary) hover:bg-(--secondary-hover) active:bg-(--primary) active:text-(--secondary) transition-colors duration-200")
+            ? "bg-(--primary) text-(--bg)"
+            : "bg-(--bg) text-(--primary) hover:bg-(--bg-light) active:bg-(--primary) active:text-(--bg) transition-colors duration-200")
         }
       >
         {text.toUpperCase()}
