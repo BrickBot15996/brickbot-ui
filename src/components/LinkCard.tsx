@@ -37,7 +37,7 @@ export function LinkCard({
         " " +
         (highlighted
           ? "bg-(--primary)"
-          : "bg-(--border) hover:bg-(--border-light)") +
+          : "bg-(--border) hover:bg-(--border-light) active:bg-(--border-light)") +
         " " +
         className
       }
@@ -61,7 +61,7 @@ export function LinkCard({
             " " +
             (highlighted
               ? "bg-(--primary)"
-              : "bg-(--border) group-hover:bg-(--border-light)")
+              : "bg-(--border) group-hover:bg-(--border-light) group-active:bg-(--border-light)")
           }
         />
         {styledIcon}

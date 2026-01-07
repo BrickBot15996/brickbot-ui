@@ -57,13 +57,13 @@ export const Column_Display: Story = {
     return (
       <div className="grid grid-cols-1 w-full h-full gap-[2rem] max-w-[20rem]">
         <LinkCard
-          title="Focșani Tech Challenge Registration Form"
+          title="Participate at Focșani Tech Challenge League Meet!"
           displayLink="brickbot.ro/meet"
           highlighted={true}
         />
         <LinkCard
-          title="FTC Portfolio Library"
-          displayLink="brickbot.ro/the-vault"
+          title="Submit Your FTC Portfolio!"
+          displayLink="brickbot.ro/submit-portfolio"
           highlighted={false}
           icon={
             <div
