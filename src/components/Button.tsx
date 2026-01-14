@@ -16,20 +16,15 @@ export function Button({
   style = {},
 }: ButtonProps) {
   return (
-    <div
-      className={`w-auto h-auto rounded-full border-[0.125rem] border-transparent bg-transparent ${className}`}
-      style={{ ...style }}
+    <button
+      className={
+        `w-auto h-auto rounded-full border-[0.25rem] px-[3rem] py-[0.4rem] text-[2rem] font-bold items-center justify-center cursor-pointer select-none` + " " +
+        (type == "primary"
+          ? "bg-(--bg) text-(--primary) border-(--primary) hover:bg-(--bg-light) active:bg-(--primary) active:text-(--bg) transition-colors duration-200"
+          : "bg-(--bg) text-(--border) border-(--border-light) text-(--border-light) hover:bg-(--bg-light) active:bg-(--border-light) active:text-(--bg) active:border-(--border-light) transition-colors duration-200")
+      }
     >
-      <button
-        className={
-          `w-auto h-auto rounded-full border-[0.25rem] border-(--primary) px-[3rem] py-[0.4rem] text-[2rem] font-bold items-center justify-center cursor-pointer select-none ` +
-          (type == "primary"
-            ? "bg-(--primary) text-(--bg)"
-            : "bg-(--bg) text-(--primary) hover:bg-(--bg-light) active:bg-(--primary) active:text-(--bg) transition-colors duration-200")
-        }
-      >
-        {text.toUpperCase()}
-      </button>
-    </div>
+      {text.toUpperCase()}
+    </button>
   );
 }

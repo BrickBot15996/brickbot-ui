@@ -38,3 +38,10 @@ export const Secondary: Story = {
     style: {},
   },
 };
+
+export const ButtonPair: Story = {
+  args: {},
+  render: () => {
+    return (<div className="flex flex-row w-auto h-auto gap-[2rem]"><Button type="primary" text="primary" /> <Button type="secondary" text="secondary" /></div>)
+  }
+}
