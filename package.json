@@ -1,6 +1,6 @@
 {
   "name": "brickbot-ui",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "This is the official BrickBot FTC Team design language component library, to be used across all of its web platforms.",
   "keywords": [
     "react",

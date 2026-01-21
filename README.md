@@ -15,12 +15,13 @@ npm install brickbot-ui
 You need to add the library CSS file into your CSS file:
 
 ```CSS
-import "brickbot-ui/style.css";
+@import "brickbot-ui/style.css";
 ```
 
 Then you can just import the components like this:
 
 ```typescript
-import { IconCard } from "brickbot-ui";
-import { LinkCard } from "brickbot-ui";
+import { Button } from 'brickbot-ui';
+import { IconCard } from 'brickbot-ui';
+import { LinkCard } from 'brickbot-ui';
 ```

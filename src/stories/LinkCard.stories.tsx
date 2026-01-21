@@ -1,21 +1,21 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { fn } from "storybook/test";
+import { fn } from 'storybook/test';
 
-import { LinkCard } from "../components/LinkCard";
+import { LinkCard } from '../components/LinkCard';
 
 const meta = {
-  title: "LinkCard",
+  title: 'LinkCard',
   component: LinkCard,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
     backgrounds: {
       options: {
-        black: { name: "Black", value: "#0f0f0f" },
+        black: { name: 'Black', value: '#0f0f0f' },
       },
     },
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 } satisfies Meta<typeof LinkCard>;
 
 export default meta;
@@ -23,29 +23,29 @@ type Story = StoryObj<typeof meta>;
 
 export const Highlighted: Story = {
   args: {
-    title: "Participate at Focșani Tech Challenge League Meet!",
-    displayLink: "brickbot.ro/meet",
+    title: 'Participate at Focșani Tech Challenge League Meet!',
+    displayLink: 'brickbot.ro/meet',
     highlighted: true,
   },
 };
 
 export const Default: Story = {
   args: {
-    title: "Submit Your FTC Portfolio!",
-    displayLink: "brickbot.ro/submit-portfolio",
+    title: 'Submit Your FTC Portfolio!',
+    displayLink: 'brickbot.ro/submit-portfolio',
     highlighted: false,
     icon: (
       <div
         className="h-(--icon-size) w-(--icon-size) bg-(--text) p-[-0.5rem]"
         style={{
-          WebkitMaskImage: "url(/the-vault-icon.svg)",
-          WebkitMaskRepeat: "no-repeat",
-          WebkitMaskPosition: "center",
-          WebkitMaskSize: "contain",
-          maskImage: "url(/the-vault-icon.svg)",
-          maskRepeat: "no-repeat",
-          maskPosition: "center",
-          maskSize: "contain",
+          WebkitMaskImage: 'url(/the-vault-icon.svg)',
+          WebkitMaskRepeat: 'no-repeat',
+          WebkitMaskPosition: 'center',
+          WebkitMaskSize: 'contain',
+          maskImage: 'url(/the-vault-icon.svg)',
+          maskRepeat: 'no-repeat',
+          maskPosition: 'center',
+          maskSize: 'contain',
         }}
       />
     ),
@@ -74,14 +74,14 @@ export const Column_Display: Story = {
                 p-[-0.5rem]
               "
               style={{
-                WebkitMaskImage: "url(/the-vault-icon.svg)",
-                WebkitMaskRepeat: "no-repeat",
-                WebkitMaskPosition: "center",
-                WebkitMaskSize: "contain",
-                maskImage: "url(/the-vault-icon.svg)",
-                maskRepeat: "no-repeat",
-                maskPosition: "center",
-                maskSize: "contain",
+                WebkitMaskImage: 'url(/the-vault-icon.svg)',
+                WebkitMaskRepeat: 'no-repeat',
+                WebkitMaskPosition: 'center',
+                WebkitMaskSize: 'contain',
+                maskImage: 'url(/the-vault-icon.svg)',
+                maskRepeat: 'no-repeat',
+                maskPosition: 'center',
+                maskSize: 'contain',
               }}
             />
           }
